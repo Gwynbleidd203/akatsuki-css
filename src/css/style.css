@@ -1,3 +1,75 @@
+.bg-orange {
+  background-color: #fb6900;
+}
+
+.txt-orange {
+  color: #fb6900;
+}
+
+.bg-red {
+  background-color: #f63700;
+}
+
+.txt-red {
+  color: #f63700;
+}
+
+.bg-navy {
+  background-color: #004853;
+}
+
+.txt-navy {
+  color: #004853;
+}
+
+.bg-turquoise {
+  background-color: #007e80;
+}
+
+.txt-turquoise {
+  color: #007e80;
+}
+
+.bg-teal {
+  background-color: #00b9bd;
+}
+
+.txt-teal {
+  color: #00b9bd;
+}
+
+.bg-dark-grey {
+  background-color: #2f2f2f;
+}
+
+.txt-dark-grey {
+  color: #2f2f2f;
+}
+
+.bg-light-grey {
+  background-color: #efefef;
+}
+
+.txt-light-grey {
+  color: #efefef;
+}
+
+.bg-white {
+  background-color: #fdfdfd;
+}
+
+.txt-white {
+  color: #fdfdfd;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.txt-black {
+  color: #000000;
+}
+
 *,
 *::before,
 *::after {
