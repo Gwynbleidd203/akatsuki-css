@@ -1,0 +1,87 @@
+.flex {
+    display: flex;
+
+    // Flex Shorthand (Grow & Shrink)
+
+    &-1 {
+        flex: 1 1 0%;
+    }
+
+    &-auto {
+        flex: 1 1 auto;
+    }
+
+    &-initial {
+        flex: 0 1 auto;
+    }
+
+    &-none {
+        flex: none;
+    }
+
+    // Flex Direction
+
+    &-col {
+        flex-direction: column;
+
+        &-reverse {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &-row {
+        flex-direction: row;
+
+        &-reverse {
+            flex-direction: row-reverse;
+        }
+    }
+
+    // Flex Wrap
+
+    &-wrap {
+        flex-wrap: wrap;
+
+        &-reverse {
+            flex-wrap: wrap-reverse;
+        }
+    }
+
+    &-nowrap {
+        flex-wrap: nowrap;
+    }
+
+    
+}
+
+// Align Items
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.flex-start {
+    align-items: flex-end;
+}
+
+// Flex Grow
+
+.grow {
+    flex-grow: 1;
+
+    &-0 {
+        flex-grow: 0;
+    }
+}
+
+// Flex Shrink
+
+.shrink {
+
+    flex-shrink: 1;
+
+    &-0 {
+        flex-shrink: 0;
+    }
+}
+
