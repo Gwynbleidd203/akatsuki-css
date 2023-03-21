@@ -1,3 +1,5 @@
+@import "../../../public/colors.js";
+
 $colour-orange:#fb6900;
 $colour-red:#f63700;
 $colour-navy: #004853;
@@ -27,5 +29,9 @@ $colors: (
     .txt-#{$name} {
         color: $color
     }
+}
+
+@each $name, $color in $colorPalette {
+    
 }
 
