@@ -1,0 +1,19 @@
+$weights: (
+    100, 200, 300, 400, 500, 600, 700, 800, 900
+);
+
+$justify: (
+    "between": space-between,
+    "around": space-around,
+    "evenly": space-evenly,
+);
+
+$flex-grid-aligns: (
+    "auto": auto,
+    "start": flex-start,
+    "end": flex-end,
+    "center": center,
+    "stretch": stretch,
+    "baseline": baseline,
+)
+

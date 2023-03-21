@@ -1,5 +1,14 @@
 // Stands for both flex and grid display
 
+@use "../abstracts/variables";
+
+@each $name, $value in $flex-grid-aligns {
+    
+    .self-#{$name} {
+        align-self: $value;
+    }
+}
+
 .justify {
     justify-content: auto;
 
