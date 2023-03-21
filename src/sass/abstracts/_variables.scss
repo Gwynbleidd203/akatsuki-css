@@ -1,6 +1,19 @@
+// FONTS
 $weights: (
     100, 200, 300, 400, 500, 600, 700, 800, 900
 );
+
+$font-sizes : (
+    "xx-sm": xx-small,
+    "x-sm": x-small,
+    "sm": small,
+    "md": medium,
+    "lg": large,
+    "x-lg": x-large,
+    "xx-lg": xx-large,
+);
+
+// FLEX GRID
 
 $justify: (
     "between": space-between,
@@ -15,5 +28,5 @@ $flex-grid-aligns: (
     "center": center,
     "stretch": stretch,
     "baseline": baseline,
-)
+);
 
