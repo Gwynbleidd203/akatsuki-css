@@ -87,6 +87,70 @@ body {
   box-sizing: border-box;
 }
 
+.font-100 {
+  font-weight: 100;
+}
+
+.font-200 {
+  font-weight: 200;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.font-800 {
+  font-weight: 800;
+}
+
+.font-900 {
+  font-weight: 900;
+}
+
+.font-lg {
+  font-size: large;
+}
+.font-md {
+  font-size: medium;
+}
+.font-sm {
+  font-size: small;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -124,12 +188,28 @@ body {
   flex-wrap: nowrap;
 }
 
-.flex-end {
-  align-items: flex-end;
+.-auto {
+  align-self: auto;
 }
 
-.flex-start {
-  align-items: flex-end;
+.-start {
+  align-self: flex-start;
+}
+
+.-end {
+  align-self: flex-end;
+}
+
+.-center {
+  align-self: center;
+}
+
+.-stretch {
+  align-self: stretch;
+}
+
+.-baseline {
+  align-self: baseline;
 }
 
 .grow {
@@ -144,6 +224,30 @@ body {
 }
 .shrink-0 {
   flex-shrink: 0;
+}
+
+.self-auto {
+  align-self: auto;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-stretch {
+  align-self: stretch;
+}
+
+.self-baseline {
+  align-self: baseline;
 }
 
 .justify {

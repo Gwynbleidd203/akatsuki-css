@@ -1,0 +1,32 @@
+// FONT WEIGHTS
+@use "../abstracts/variables";
+
+@each $weight in $weights {
+    .font-#{$weight} {
+        font-weight: $weight;
+    }
+}
+
+// FONTS
+
+.font {
+    //font-size: inherit;
+
+    &-lg { font-size: large; }
+
+    &-md { font-size: medium; }
+
+    &-sm { font-size: small; }
+}
+
+// HEADING
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}

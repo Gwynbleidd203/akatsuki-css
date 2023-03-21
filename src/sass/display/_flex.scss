@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 .flex {
     display: flex;
 
@@ -56,12 +58,11 @@
 
 // Align Items
 
-.flex-end {
-    align-items: flex-end;
-}
-
-.flex-start {
-    align-items: flex-end;
+@each $name, $value in $flex-grid-aligns {
+    
+    .-#{$name} {
+        align-self: $value;
+    }
 }
 
 // Flex Grow
