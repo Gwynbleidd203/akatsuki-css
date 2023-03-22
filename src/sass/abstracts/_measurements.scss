@@ -66,6 +66,43 @@ $width: (
     "screen": 100vw,
 );
 
+$start: 0;
+$end: 88;
+$step: 0.4rem;
+
+
+@for $i from $start through $end {
+  $value: $i * $step;
+
+  .p-#{$i * 4} {
+    padding: $value;
+  }
+
+  .pt-#{$i * 4} {
+    padding-top: $value;
+  }
+
+  .pb-#{$i * 4} {
+    padding-bottom: $value;
+  }
+
+  .pr-#{$i * 4} {
+    padding-right: $value;
+  }
+
+  .pl-#{$i * 4} {
+    padding-left: $value;
+  }
+
+  .py-#{$i * 4} {
+    padding: $value 0;
+  }
+
+  .px-#{$i * 4} {
+    padding: 0 $value;
+  }
+}
+
 @each $name, $value in $width {
     .w-#{$name} {
         width: $value;

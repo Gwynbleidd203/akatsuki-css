@@ -1,6 +1,4 @@
-const sass = require('sass')
-
-const input = {
+module.exports = {
     theme: {
       width: {
         '0': '0',
@@ -37,6 +35,3 @@ const input = {
     },
     // ...
   }
-
-const result = sass.compile(input)
-console.log(result.css)
