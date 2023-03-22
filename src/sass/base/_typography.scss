@@ -20,8 +20,12 @@
 
     &-sm { font-size: small; }
 
-    &-inter {
-        font-family: 'Inter', 'sans-serif';
+    &-sans-serif {
+        font-family: 'Inter', 'Roboto', sans-serif;
+    }
+
+    &-serif {
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 }
 // HEADING
