@@ -60,7 +60,7 @@
 
 @each $name, $value in $flex-grid-aligns {
     
-    .-#{$name} {
+    .self-#{$name} {
         align-self: $value;
     }
 }
