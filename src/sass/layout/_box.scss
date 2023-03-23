@@ -1,0 +1,19 @@
+// Box Sizing --------------------------------
+
+.box-border {
+    box-sizing: border-box;
+}
+
+.box-content {
+    box-sizing: content-box;
+}
+
+// Box Decoration -----------------------------
+
+.box-decor-clone {
+    box-decoration-break: clone;
+}
+
+.box-decor-slice {
+    box-decoration-break: slice;
+}
