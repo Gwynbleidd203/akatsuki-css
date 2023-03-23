@@ -1,0 +1,13 @@
+$break-inside: (
+    auto, avoid, avoid-page, avoid-column
+);
+
+$break-before: (
+    all, page, left, right, column
+);
+
+@each $value in $break-inside {
+    .break-inside-#{$value} {
+        break-inside: $value;
+    }
+}

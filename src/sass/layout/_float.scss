@@ -1,0 +1,19 @@
+$float: (
+    right, left, none
+);
+
+$float_clear: (
+    left, right, both, none
+);
+
+@each $value in $float_clear {
+    .clear-#{$value} {
+        clear: $value;
+    }
+}
+
+@each $value in $float {
+    .float-#{$value} {
+        float: $value;
+    }
+}
