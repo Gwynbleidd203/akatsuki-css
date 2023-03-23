@@ -1,0 +1,9 @@
+@function stepInterate($start, $end, $step) {
+
+    @for $i from $start through $end {
+
+        $value: $i * $step
+    }
+
+    @return $value
+}

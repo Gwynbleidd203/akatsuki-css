@@ -19,8 +19,15 @@
     &-md { font-size: medium; }
 
     &-sm { font-size: small; }
-}
 
+    &-sans-serif {
+        font-family: 'Inter', 'Roboto', sans-serif;
+    }
+
+    &-serif {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
 // HEADING
 
 h1,

@@ -1,0 +1,29 @@
+// Border Styles
+
+$border-rd: (
+    "none":  0,
+    "sm": .2rem,
+    " ": .4rem,
+    "md": .6rem,
+    "lg": .8rem,
+    "xl": 1.2rem,
+    "2xl": 1.6rem,
+    "3xl": 2.4rem,
+    "full": 50%, 
+);
+
+@each $name, $value in $border-rd {
+
+    @if $name == " " {
+        .rounded {
+            border-radius: $value;
+        }
+
+        
+    } @else {
+
+        .rounded-#{$name} {
+            border-radius: $value;
+        }
+    }
+}

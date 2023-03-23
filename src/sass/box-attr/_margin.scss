@@ -1,0 +1,19 @@
+// Margin
+
+$margins: (
+    "auto": auto,
+
+);
+
+$start: 1;
+$end: 64;
+$step: .1rem;
+
+@for $i from $start through $end {
+
+    $value: $i * $step;
+
+    .m-#{$i} {
+        margin: $value;
+    }
+}
