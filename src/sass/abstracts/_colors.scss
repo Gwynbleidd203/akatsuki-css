@@ -294,8 +294,6 @@ $color-palette: (
     ),
 );
 
-
-
 @each $name, $color in $color-palette-default {
     .bg-#{$name} {
         background-color: $color;

@@ -1,4 +1,4 @@
-$width: (
+$sizes: (
     "auto": auto,
     "fit": fit-content,
     "min": min-content,
@@ -63,7 +63,22 @@ $width: (
     "10_12": 83.33333%,
     "11_12": 91.66667%,
     "full": 100%,
-    "screen": 100vw,
+);
+
+$sizes-width: (
+  "640": 64rem,
+  "854": 85.4rem,
+  "1280": 128rem,
+  "1920": 192rem,
+  "screen": 100vw,
+);
+
+$sizes-height: (
+  "360": 36rem,
+  "480": 48rem,
+  "720": 72rem,
+  "1080": 108rem,
+  "screen": 100vh,
 );
 
 $start: 0;
@@ -103,8 +118,24 @@ $step: 0.4rem;
   }
 }
 
-@each $name, $value in $width {
+@each $name, $value in $sizes {
     .w-#{$name} {
         width: $value;
     }
+
+    .h-#{$name} {
+      height: $value;
+    }
+}
+
+@each $name, $value in $sizes-width {
+  .w-#{$name} {
+    width: $value;
+  }
+}
+
+@each $name, $value in $sizes-height {
+  .h-#{$name} {
+    height: $value;
+  }
 }
