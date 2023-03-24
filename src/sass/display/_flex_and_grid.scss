@@ -36,3 +36,19 @@
         &-stretch { justify-items: stretch; }
     }
 }
+
+.order {
+
+    @for $i from 1 through 12 {
+
+        &-#{$i} {
+            order: $i;
+        }
+    }
+
+    &-first { order: -9999; }
+
+    &-last { order: 9999; }
+
+    &-none { order: none; }
+}

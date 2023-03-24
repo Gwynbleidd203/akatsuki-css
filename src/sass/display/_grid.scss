@@ -1,0 +1,137 @@
+// Col Span
+
+.col-auto { grid-column: auto; }
+
+.col-span-full { grid-column: 1 / -1; }
+
+// Col Start
+
+.col-start-auto { grid-column-start: auto; }
+
+// Col End
+
+.col-end-start { grid-column-end: auto; }
+
+// Row
+
+.row-auto { grid-row: auto; }
+
+// Row Span
+
+.row-span-full { grid-row: 1 / -1; }
+
+// Row Start
+
+.row-start-auto { grid-row-start: auto;}
+
+// Row End
+
+.row-end-auto { grid-row-end: auto; }
+
+
+.grid {
+    display: grid;
+
+    //Grid cols
+
+    &-cols-none { grid-template-columns: none; }
+
+    // Grid Rows
+
+    &-rows-none { grid-template-rows: none; }
+
+    // Grid Flow
+
+    $grid-flow: (
+        "row": row,
+        "col": column,
+        "dense": dense,
+        "row-dense": row dense,
+        "col-dense": column dense
+    );
+
+    @each $name, $value in $grid-flow {
+        &-flow-#{$name} {
+            grid-auto-flow: $value;
+        }
+    }
+}
+
+// Grid Auto Columns
+
+$grid-auto-rc: (
+    "auto": auto,
+    "min": min-content,
+    "max": max-content,
+    "fr": minmax(0, 1fr)
+);
+
+@each $name, $value in $grid-auto-rc {
+    .auto-cols-#{$name} {
+        grid-auto-columns: $value;
+    }
+
+    .auto-rows-#{$name} {
+        grid-auto-rows: $value;
+    }
+}
+
+@for $i from 1 through 12 {
+    .grid-cols-#{$i} {
+        grid-template-columns: repeat($i, minmax(0, 1fr));
+    }
+
+    .col-span-#{$i} {
+        grid-column: span $i / span $i;
+    }
+
+    .col-start-#{$i} {
+        grid-column-start: $i;
+    }
+
+    .col-end-#{$i} {
+        grid-column-end: $i;
+    }
+
+    @if $i == 12 {
+        .col-start-13 {
+            grid-column-start: 13;
+        }
+
+        .col-end-13 {
+            grid-column-end: 13;
+        }
+    }
+}
+
+@for $i from 1 through 6 {
+    .grid-rows-#{$i} {
+        grid-template-rows: repeat($i, minmax(0, 1fr));
+    }
+
+    .row-span-#{$i} {
+        grid-row: span $i / span $i;
+    }
+
+    .row-start-#{$i} {
+        grid-row-start: $i;
+    }
+
+    .row-end-#{$i} {
+        grid-row-end: $i;
+    }
+
+    @if $i == 6 {
+        .row-span-7 {
+            grid-row: span 7 / span 7;
+        }
+
+        .row-start-7 {
+            grid-row-start: 7;
+        }
+
+        .row-end-7 {
+            grid-row-end: 7;
+        }
+    }
+}
