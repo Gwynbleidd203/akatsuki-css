@@ -7,6 +7,10 @@
     .self-#{$name} {
         align-self: $value;
     }
+
+    .place-items-#{$name} {
+        place-items: $value;
+    }
 }
 
 .justify {
@@ -35,6 +39,21 @@
 
         &-stretch { justify-items: stretch; }
     }
+
+    &-self {
+
+        justify-self: unset;
+
+        &-auto { justify-self: auto; }
+
+        &-start { justify-self: start; }
+
+        &-end { justify-self: end; }
+
+        &-center { justify-self: center; }
+
+        &-stretch { justify-self: stretch; }
+    }
 }
 
 .order {
@@ -52,3 +71,28 @@
 
     &-none { order: none; }
 }
+
+// Align content
+
+$all-aligns: map-merge($justify, $flex-grid-aligns);
+
+@each $name, $value in $all-aligns {
+    .content-#{$name} {
+        align-content: $value;
+    }
+
+    .place-content-#{$name} {
+        place-content: $value;
+    }
+}
+
+// Place Self
+.place-self-auto { place-self: auto; }
+
+.place-self-start { place-self: start; }
+
+.place-self-end { place-self: end; }
+
+.place-self-center { place-self: center; }
+
+.place-self-stretch { place-self: stretch; }

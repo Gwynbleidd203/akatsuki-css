@@ -6842,24 +6842,48 @@ h6 {
   align-self: auto;
 }
 
+.place-items-auto {
+  place-items: auto;
+}
+
 .self-start {
   align-self: flex-start;
+}
+
+.place-items-start {
+  place-items: flex-start;
 }
 
 .self-end {
   align-self: flex-end;
 }
 
+.place-items-end {
+  place-items: flex-end;
+}
+
 .self-center {
   align-self: center;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .self-stretch {
   align-self: stretch;
 }
 
+.place-items-stretch {
+  place-items: stretch;
+}
+
 .self-baseline {
   align-self: baseline;
+}
+
+.place-items-baseline {
+  place-items: baseline;
 }
 
 .justify {
@@ -6897,6 +6921,24 @@ h6 {
 }
 .justify-items-stretch {
   justify-items: stretch;
+}
+.justify-self {
+  justify-self: unset;
+}
+.justify-self-auto {
+  justify-self: auto;
+}
+.justify-self-start {
+  justify-self: start;
+}
+.justify-self-end {
+  justify-self: end;
+}
+.justify-self-center {
+  justify-self: center;
+}
+.justify-self-stretch {
+  justify-self: stretch;
 }
 
 .order-1 {
@@ -6943,6 +6985,98 @@ h6 {
 }
 .order-none {
   order: none;
+}
+
+.content-between {
+  align-content: space-between;
+}
+
+.place-content-between {
+  place-content: space-between;
+}
+
+.content-around {
+  align-content: space-around;
+}
+
+.place-content-around {
+  place-content: space-around;
+}
+
+.content-evenly {
+  align-content: space-evenly;
+}
+
+.place-content-evenly {
+  place-content: space-evenly;
+}
+
+.content-auto {
+  align-content: auto;
+}
+
+.place-content-auto {
+  place-content: auto;
+}
+
+.content-start {
+  align-content: flex-start;
+}
+
+.place-content-start {
+  place-content: flex-start;
+}
+
+.content-end {
+  align-content: flex-end;
+}
+
+.place-content-end {
+  place-content: flex-end;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.content-stretch {
+  align-content: stretch;
+}
+
+.place-content-stretch {
+  place-content: stretch;
+}
+
+.content-baseline {
+  align-content: baseline;
+}
+
+.place-content-baseline {
+  place-content: baseline;
+}
+
+.place-self-auto {
+  place-self: auto;
+}
+
+.place-self-start {
+  place-self: start;
+}
+
+.place-self-end {
+  place-self: end;
+}
+
+.place-self-center {
+  place-self: center;
+}
+
+.place-self-stretch {
+  place-self: stretch;
 }
 
 .box-border {
