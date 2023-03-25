@@ -7275,4 +7275,24 @@ h6 {
   z-index: auto;
 }
 
+.min-w-0 {
+  min-width: 0rem;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.min-w-min {
+  min-width: min-content;
+}
+
+.min-w-max {
+  min-width: max-content;
+}
+
+.min-w-fit {
+  min-width: fit-content;
+}
+
 /*# sourceMappingURL=style.css.map */
