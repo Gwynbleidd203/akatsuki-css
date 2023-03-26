@@ -27,3 +27,61 @@ $border-rd: (
         }
     }
 }
+
+$border-width: (
+    "0": 0rem,
+    "1": .1rem,
+    "2": .2rem,
+    "3": .3rem,
+    "4": .4rem,
+    "6": .6rem,
+    "8": .8rem,
+    "10": 1rem
+);
+
+@each $name, $value in $border-width {
+    .border-#{$name} {
+        border-width: $value;
+    }
+
+    .border-x-#{$name} {
+        border-left-width: $value;
+        border-right-width: $value;
+    }
+
+    .border-y-#{$name} {
+        border-top-width: $value;
+        border-bottom-width: $value;
+    }
+
+    .border-t-#{$name} {
+        border-top-width: $value;
+    }
+
+    .border-l-#{$name} {
+        border-left-width: $value;
+    }
+
+    .border-r-#{$name} {
+        border-right-width: $value;
+    }
+
+    .border-b-#{$name} {
+        border-bottom-width: $value;
+    }
+}
+
+$border-styles: (
+    "dashed": dashed,
+    "dotted": dotted,
+    "double": double,
+    "hidden": hidden,
+    "none": none,
+    "solid": solid
+);
+
+@each $name, $style in $border-styles {
+    .border-#{$name} {
+        border-style: $style;
+    }
+}

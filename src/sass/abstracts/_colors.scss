@@ -302,6 +302,10 @@ $color-palette: (
     .txt-#{$name} {
         color: $color;
     }
+
+    .border-#{$name} {
+        border-color: $color;
+    }
 }
 
 @each $color-name, $color-values in $color-palette {
@@ -314,6 +318,10 @@ $color-palette: (
     
         .txt-#{$color-name}-#{$color-value} {
             color: $color-code
+        }
+
+        .border-#{$color-name}-#{$color-value} {
+            border-color: $color-code;
         }
     }
 }
