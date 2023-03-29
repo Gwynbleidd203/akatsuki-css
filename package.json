@@ -1,7 +1,7 @@
 {
   "name": "akatsuki-css",
   "version": "1.0.0",
-  "description": "A simple front-end framework.",
+  "description": "A simple front-end framework base on TailwindCSS.",
   "main": "index.js",
   "dependencies": {
     "anymatch": "^3.1.3",
@@ -37,6 +37,10 @@
   ],
   "author": "vattghern203",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vattghern203/akatsuki-css"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "concat": "^1.0.3",
