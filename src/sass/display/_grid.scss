@@ -1,32 +1,48 @@
 // Col Span
 
-.col-auto { grid-column: auto; }
+.col-auto {
+    grid-column: auto;
+}
 
-.col-span-full { grid-column: 1 / -1; }
+.col-span-full {
+    grid-column: 1 / -1;
+}
 
 // Col Start
 
-.col-start-auto { grid-column-start: auto; }
+.col-start-auto {
+    grid-column-start: auto;
+}
 
 // Col End
 
-.col-end-start { grid-column-end: auto; }
+.col-end-start {
+    grid-column-end: auto;
+}
 
 // Row
 
-.row-auto { grid-row: auto; }
+.row-auto {
+    grid-row: auto;
+}
 
 // Row Span
 
-.row-span-full { grid-row: 1 / -1; }
+.row-span-full {
+    grid-row: 1 / -1;
+}
 
 // Row Start
 
-.row-start-auto { grid-row-start: auto;}
+.row-start-auto {
+    grid-row-start: auto;
+}
 
 // Row End
 
-.row-end-auto { grid-row-end: auto; }
+.row-end-auto {
+    grid-row-end: auto;
+}
 
 
 .grid {
@@ -34,11 +50,15 @@
 
     //Grid cols
 
-    &-cols-none { grid-template-columns: none; }
+    &-cols-none {
+        grid-template-columns: none;
+    }
 
     // Grid Rows
 
-    &-rows-none { grid-template-rows: none; }
+    &-rows-none {
+        grid-template-rows: none;
+    }
 
     // Grid Flow
 
@@ -50,11 +70,12 @@
         "col-dense": column dense
     );
 
-    @each $name, $value in $grid-flow {
-        &-flow-#{$name} {
-            grid-auto-flow: $value;
-        }
+@each $name,
+$value in $grid-flow {
+    &-flow-#{$name} {
+        grid-auto-flow: $value;
     }
+}
 }
 
 // Grid Auto Columns
@@ -66,7 +87,8 @@ $grid-auto-rc: (
     "fr": minmax(0, 1fr)
 );
 
-@each $name, $value in $grid-auto-rc {
+@each $name,
+$value in $grid-auto-rc {
     .auto-cols-#{$name} {
         grid-auto-columns: $value;
     }
@@ -93,7 +115,7 @@ $grid-auto-rc: (
         grid-column-end: $i;
     }
 
-    @if $i == 12 {
+    @if $i ==12 {
         .col-start-13 {
             grid-column-start: 13;
         }
@@ -121,7 +143,7 @@ $grid-auto-rc: (
         grid-row-end: $i;
     }
 
-    @if $i == 6 {
+    @if $i ==6 {
         .row-span-7 {
             grid-row: span 7 / span 7;
         }
@@ -135,3 +157,29 @@ $grid-auto-rc: (
         }
     }
 }
+
+$start: 1;
+$end: 96;
+$step: 0.1rem;
+
+
+@for $i from $start through $end {
+
+    $value: $i * $step;
+
+    .gap-#{$i} {
+        gap: $value;
+    }
+
+    .gap-x-#{$i} {
+        column-gap: $value;
+    }
+
+    .gap-y-#{$i} {
+        row-gap: $value;
+    }
+}
+
+
+$gap: (
+    )

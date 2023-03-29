@@ -1,0 +1,11 @@
+$min-width: (
+    "0": 0rem,
+    "full": 100%,
+    "min": min-content,
+    "max": max-content,
+    "fit": fit-content
+);
+
+@each $name, $value in $min-width {
+    .min-w-#{$name} { min-width: $value; }
+}
