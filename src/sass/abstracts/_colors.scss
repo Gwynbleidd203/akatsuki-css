@@ -1,8 +1,9 @@
 $color-palette-default: (
     "inherit": inherit,
     "black": #000,
-    "whhite": #fff,
+    "white": #fff,
     "current-color": currentColor,
+    "transparent": transparent
 ); 
 
 $color-palette: (
@@ -323,5 +324,14 @@ $color-palette: (
         .border-#{$color-name}-#{$color-value} {
             border-color: $color-code;
         }
+
+        .outline-#{$color-name}-#{$color-value} {
+            outline-color: $color-code;
+        }
+
+        .decoration-#{$color-name}-#{$color-value} {
+            text-decoration-color: $color-code;
+        }
+
     }
 }

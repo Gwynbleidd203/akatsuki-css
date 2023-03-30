@@ -1,0 +1,37 @@
+.outline {
+    outline: solid .2rem;
+
+    &-none { outline: none; }
+    // Width
+
+    &-0 { outline-width: 0rem; }
+
+    &-1 { outline-width: .1rem; }
+
+    &-2 { outline-width: .2rem; }
+
+    &-4 { outline-width: .4rem; }
+
+    &-8 { outline-width: .8rem; }
+
+    // Styles
+
+    &-dashed { outline-style: dashed; }
+
+    &-dotted { outline-style: dotted; }
+
+    &-double { outline-style: double; }
+
+    // Offset
+
+    &-offset-0 { outline-offset: 0rem; }
+
+    &-offset-1 { outline-offset: .1rem; }
+
+    &-offset-2 { outline-offset: .2rem; }
+
+    &-offset-4 { outline-offset: .4rem; }
+
+    &-offset-8 { outline-offset: .8rem; }
+}
+

@@ -1,7 +1,38 @@
 @use "../abstracts/variables";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-// FONT WEIGHTS
+
+// Variables ---------------------------------------------------
+$font-spacings: (
+    "tighter": -0.05em,
+    "tigh": -0.025em,
+    "normal": 0em,
+    "wide": 0.025em,
+    "wider": 0.1em
+);
+
+$line-heights: (
+    "none": 1,
+    "tight": 1.25,
+    "snug": 1.375,
+    "normal": 1.5,
+    "relaxed": 1.625,
+    "loose": 2,
+    "3": 1.2rem,
+    "4": 1.6rem,
+    "5": 2rem,
+    "6": 2.4rem,
+    "7": 2.8rem,
+    "8": 3.2rem,
+    "9": 3.6rem,
+    "10": 4rem
+);
+
+$text-align: (
+    "left", "justify", "right", "center", "start", "end"
+);
+
+// FONT WEIGHTS ---------------------------------------------------
 
 @each $weight in $weights {
     .font-#{$weight} {
@@ -9,7 +40,7 @@
     }
 }
 
-// FONTS
+// FONTS ---------------------------------------------------
 
 .font {
     //font-size: inherit;
@@ -27,8 +58,75 @@
     &-serif {
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
+
+    @each $name, $value in $font-spacings {
+        &-spacing-#{$name} {
+            letter-spacing: $value;
+        }
+    }
 }
-// HEADING
+
+// Smoothing
+
+.antialiased { 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &-auto {
+        -webkit-font-smoothing: auto;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+// Styles Fonts
+
+.italic { font-style: italic; }
+
+.oblique { font-style: oblique; }
+
+.normal { font-style: normal; }
+
+// Style General
+
+.list-img-none { list-style-image: none; }
+
+.list-none { list-style-type: none; }
+.list-disc { list-style-type: disc; }
+.list-decimal { list-style-type: decimal; }
+
+// Style Position
+
+.list-inside { list-style-position: inside; }
+.list-outside { list-style-position: outside; }
+
+// Line Height
+
+.leading {
+    line-height: normal;
+
+    @each $name, $value in $line-heights {
+        &-#{$name} {
+            line-height: $value;
+        }
+    }
+}
+
+// TEXT ---------------------------------------------------
+
+@each $key in $text-align {
+    .txt-#{$key} {
+        text-align: $key;
+    }
+}
+
+// Text Decoration 
+
+.underline { text-decoration: underline; }
+.overline { text-decoration: overline; }
+.line-through { text-decoration: line-through; }
+.no-underline { text-decoration: none; }
+
+// HEADING ---------------------------------------------------
 
 h1,
 h2,
